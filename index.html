@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>London cafe</title>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+</head>
+<body style="font-family:Montserrat">
+  <div class="header">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+ 			<div class="container-fluid">
+    			<div class="navbar-header">
+      			<a class="navbar-brand" href="#">London cafe</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+		      		<li class="active"><a href="#">HOME</a></li>
+		      		<li><a href="#About">ABOUT</a></li>
+		      		<li><a href="#Menu">MENU</a></li>
+		      		<li><a href="#Place">WHERE</a></li>
+		    	</ul>
+ 			</div>
+		</nav>	
+	</div> 
+	<div class="jumbotron text-center" height="1000px" style="background-image: jumbotron.jpg; z-index:-1; jumbotron.jpg; background-size: cover;">
+  		<h1>London cafe</h1> 
+      <h2>-feel the taste-</h2> 
+	</div>
+  
+	<div class="main-content" id="About">
+		<div class="container">
+			<div class="title">
+			  <h1>ABOUT</h1>
+			</div>
+			<div class="text">
+			  <p>This big, bright, comfortable room is renowned for its devotion to artisan coffee. Monday to Friday, everyone’s in a bit of a hurry (more so after a couple of shots), but there’s no rush at weekends and coffee is always produced to the very highest levels. For those who don’t want espresso, top-notch brewed coffees are made using several different methods. Food is displayed on the counter, with a small selection of daily dishes on a blackboard; quality has been consistently high on our visits. Leather Lane may be nearly empty on Saturdays, but London cafe makes it a serious destination.</p>
+			  <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+			</div>
+		</div>
+		<div class="container"> 
+			<blockquote>
+     <p>„I don't want to be famous. I like to be able to sit in a cafe and watch the world go by and observe people.”</p>
+    <footer>Sophia Myles</footer>
+      </blockquote>
+		</div>
+		<img src="cafe.jpg" class="img-rounded" style="width:100%;max-width:700px">
+		<div class="image-text text-left">
+	    <p><strong>Opening hours:</strong> 8am-6pm Mon-Fri; 10am-5pm Sat; 10am-4pm Sun</p>
+    	<p><strong>Address:</strong> 23-25 Leather Lane, London, EC1N 7TE </p>
+    </div>		
+
+	</div>
+	<div class="container menu" id="Menu">
+		<div class="title">
+		  <h1>THE MENU</h1>
+		</div>
+	
+			<table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th class="col-md-6 text-center">Eat</th>
+            <th class="col-md-6 text-center">More</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bread Basket</td>
+            <td>Assortment of fresh baked fruit breads and muffins 5.50</td>
+       	  </tr>
+          <tr>
+            <td>Honey Almond Granola with Fruits</td>
+            <td>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</td>
+          </tr>  
+          <tr>
+            <td>Belgian Waffle</td>
+            <td>Vanilla flavored batter with malted flour 7.50</td>
+          </tr>
+          <tr>   
+            <td>Scrambled eggs</td>
+            <td>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</td>
+          </tr>
+          <tr>
+          	<td>Blueberry Pancakes</td>
+          	<td>With syrup, butter and lots of berries 8.50</td>
+        	</tr>
+
+			<table class="table table-bordered  text-center">
+        <thead class="text-center">
+          <tr>
+            <th class="col-md-6 text-center">Drink</th>
+            <th class="col-md-6 text-center">More</th>
+          </tr> 
+          </thead>
+        <tbody>
+         <tr>
+            <td>Coffee</td>
+            <td>Regular coffee 2.50</td>
+       	  </tr>
+          <tr>
+            <td>Chocolato</td>
+            <td>Chocolate espresso with milk 4.50</td>
+          </tr>  
+          <tr>
+            <td>Corretto</td>
+            <td>Whiskey and coffee 5.00</td>
+          </tr>
+          <tr>   
+            <td>Iced tea</td>
+            <td>Mixed with multiple common flavors including lemon, raspberry, lime 3.00</td>
+          </tr>
+          <tr>
+          	<td>Soda</td>
+          	<td>Coke, Sprite, Fanta, etc. 2.50</td>
+          </tr>
+      </table>
+      	<img src="caffe.jpg">
+	</div>
+
+	<div class="place" id="Place">
+		<div class="container title">
+		  <h1>Where to find us</h1>
+		</div>
+    <br>
+		<div class="container">
+			<div class="map-text">
+			</div>
+			<div id="map" style="width:400px;height:400px;">
+  			<script>
+  				function myMap() {
+      				var mapOptions = {
+          				center: new google.maps.LatLng(51.5, -0.12),
+         					zoom: 10,
+          				mapTypeId: google.maps.MapTypeId.HYBRID
+      		}
+      	  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      	}
+      	</script>
+    	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+		  </div>
+		<div class="information">
+			<p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.</p>
+		</div>
+    <br>
+	 </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4><strong>Contact</strong></h4>
+          <h6>E-mail: cafe@gmail.com</h6>
+          <h6>Phone number: +44 20 8555 3335</h6>
+          <h6>Social media: thelondoncafe</h6>
+
+        </div>
+        <div clas="col-sm-6">
+          <h4><strong>About us</strong></h4>
+          <h6>London cafe is one of the best cafes in London. 
+             Most people tend to describe The cafe as one of the coziest places in town 
+             for a quite family dinner or just coffe with your friends.</h6>
+        </div>
+
+      </div>      
+        <h5>© Copyright 2012 - 2018 All Rights Reserved </h5>
+    </div>
+  </div>
+	
+</body>
+</html>
+
